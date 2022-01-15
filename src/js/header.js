@@ -1,7 +1,7 @@
 import Logo from '../img/logo.png';
 import '../css/header.css';
 
-const header = (doc) => {
+const header = (doc, listener) => {
     // assets
     const logo = new Image();
     logo.src = Logo;
@@ -24,6 +24,7 @@ const header = (doc) => {
     for (let i of menuItems){
         const li = doc.createElement('li');
         const a = doc.createElement('a');
+        li.addEventListener('click', listener);
         a.textContent = i;
         a.setAttribute('href', '#');
         li.appendChild(a);
