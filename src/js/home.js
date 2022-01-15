@@ -1,7 +1,8 @@
 import imgLobster from '../img/image.jpg';
 
-const load = function(doc){
+const home = function(doc){
     const wrapper = doc.createElement('div');
+    wrapper.classList.add('content');
 
     const image = new Image();
     image.src = imgLobster;
@@ -17,4 +18,4 @@ const load = function(doc){
     return wrapper;
 }
 
-export {load};
+export {home};

@@ -1,9 +1,10 @@
 import Logo from '../img/logo.png';
+import '../css/header.css';
 
 const header = (doc) => {
     const logo = new Image();
     logo.src = Logo;
-    const container = doc.createElement('div');
+    const container = doc.createElement('header');
     container.classList.add('header');
 
     container.appendChild(logo);

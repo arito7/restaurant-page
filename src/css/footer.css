@@ -1,0 +1,19 @@
+footer.footer {
+    background-color: #efefef;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer > ul > li {
+    list-style: none;
+}
+
+.footer > ul > li > a {
+    text-decoration: none;
+    color: #454545;
+    font-size: 0.5em;
+}
