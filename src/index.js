@@ -15,7 +15,7 @@ import './css/styles.css';
     const contact = contactPage(document);
     const menu = menupage(document);
     // set default page
-    contentWrapper.appendChild(menu);
+    contentWrapper.appendChild(homePage);
     
     wrapper.appendChild(header(document, navListener));  
     wrapper.appendChild(contentWrapper);

@@ -4,14 +4,16 @@
 
 .img-container {
     display: grid;
+    gap: 16px;
     grid-template-columns: repeat(2, 1fr);
 }
 
 .img-container > img {
-    max-height: 300px;
-    max-width: 300px;
+    height: 300px;
+    width: 300px;
     margin: auto;
-    border-radius: 8px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .title {
