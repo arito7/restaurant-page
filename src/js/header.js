@@ -9,7 +9,8 @@ const header = (doc) => {
     logo.setAttribute('alt', 'logo');
 
     // container
-    const container = doc.createElement('header');
+    const header = doc.createElement('header');
+    const container = doc.createElement('div');
     container.classList.add('header');
 
     // create children
@@ -30,11 +31,11 @@ const header = (doc) => {
     }
     
     // append
-    container.appendChild(logo);
+    header.appendChild(container);
     container.appendChild(name);
     container.appendChild(list);
 
-    return container;
+    return header;
 };
 
 export {header};
