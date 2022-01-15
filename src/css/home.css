@@ -21,3 +21,7 @@
 .phrase {
     text-align: center;
 }
+
+hr {
+    margin: 32px auto;
+}

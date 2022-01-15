@@ -2,6 +2,7 @@ import {home} from './js/home';
 import {header} from './js/header';
 import {footer} from './js/footer';
 import {contactPage} from './js/contact';
+import { menupage } from './js/menu';
 import './css/styles.css';
 
 (()=>{
@@ -12,25 +13,29 @@ import './css/styles.css';
 
     const homePage = home(document);
     const contact = contactPage(document);
-    contentWrapper.appendChild(contact);
-  
-    wrapper.appendChild(header(document, (li)=>{
-        switch(li.target.textContent){
+    const menu = menupage(document);
+    // set default page
+    contentWrapper.appendChild(menu);
+    
+    wrapper.appendChild(header(document, navListener));  
+    wrapper.appendChild(contentWrapper);
+    wrapper.appendChild(footer(document));
+
+    function navListener(e){
+        switch(e.target.textContent){
             case 'Home':
                 swap(contentWrapper, homePage);
                 break;
             case 'Menu':
+                swap(contentWrapper, menu);
                 break;
             case 'Contact':
                 swap(contentWrapper, contact);
                 break;
         }
-    }));  
-    wrapper.appendChild(contentWrapper);
-    wrapper.appendChild(footer(document));
-
+    }
     function swap(parent, n){
-        contentWrapper.removeChild(contentWrapper.firstChild);
-        contentWrapper.appendChild(n);
+        parent.removeChild(parent.firstChild);
+        parent.appendChild(n);
     }
 })()

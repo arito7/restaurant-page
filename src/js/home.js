@@ -55,7 +55,9 @@ const home = function(doc){
     
     wrapper.appendChild(restaurantName);
     wrapper.appendChild(phrase);
+    wrapper.appendChild(doc.createElement('hr'));
     wrapper.appendChild(imgWrapper);
+    wrapper.appendChild(doc.createElement('hr'));
     wrapper.appendChild(hours);
 
     return wrapper;
