@@ -1,18 +1,20 @@
 import {home} from './js/home';
 import {header} from './js/header';
 import {footer} from './js/footer';
+import {contactPage} from './js/contact';
 import './css/styles.css';
 
 (()=>{
     const wrapper = document.querySelector('.container');
-    wrapper.appendChild(header(document));
-    let body = home(document);
-    wrapper.appendChild(body);
-    // const btnTest = document.createElement('button');
-    // btnTest.addEventListener('click',()=> {
-    //     wrapper.removeChild(body);
-    // })
-    // wrapper.appendChild(btnTest);
+    
+    const contentWrapper = document.createElement('div');
+    contentWrapper.classList.add('content-wrapper');
+
+    const body = home(document);
+    const contact = contactPage(document);
+    contentWrapper.appendChild(contact);
+  
+    wrapper.appendChild(header(document));  
+    wrapper.appendChild(contentWrapper);
     wrapper.appendChild(footer(document));
 })()
-console.log('hello');

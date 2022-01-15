@@ -20,7 +20,7 @@ body {
     height: 100%;
 }
 
-.content {
+.content-wrapper {
     align-self: stretch;
     max-width: 940px;
     background-color: #fdfdfd;

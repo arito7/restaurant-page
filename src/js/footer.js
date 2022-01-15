@@ -6,6 +6,7 @@ const footer = (doc) => {
     
     const tags = [
         `<a href='https://www.freepik.com/vectors/background'>Background vector created by pikisuperstar - www.freepik.com</a>`,
+        `<a href='https://www.freepik.com/vectors/background'>Background vector created by mamewmy - www.freepik.com</a>`,
     ]
     
     const list = doc.createElement('ul');

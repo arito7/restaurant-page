@@ -1,0 +1,27 @@
+.contact-container {
+    text-align: center;
+}
+
+
+.contact-card {
+    align-items: center;
+    background-color: #eee;
+    border-radius: 8px;
+    display: flex;
+    gap: 16px;
+    justify-content: space-evenly;
+    margin: 16px auto;
+    padding: 16px;
+    text-align: start;
+}
+
+.profile-img {
+    max-width: 128px;
+    max-height: 128px;
+    border: 2px solid #bbb;
+}
+
+.right-half {
+    flex: 1;
+    max-width: 70%;
+}
