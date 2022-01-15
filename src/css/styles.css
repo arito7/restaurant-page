@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('../fonts/lobster-regular.ttf') format('ttf');
+    font-style: normal;
+}
+
+body {
+    font-family: 'Lobster', 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #fffeff;
+}
+
+.header {
+    display: flex;
+    padding: 16px;
+    z-index: 1;
+}
+
+.header > ul {
+    flex: 1;
+    align-items: center;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    justify-items: center;
+    margin: 0;
+    padding: 32px;
+}
+.header > img {
+    width: 10%;
+}
+
+.header > ul > li {
+    list-style: none;
+}
+
+.header > ul > li > a {
+    text-decoration: none;
+    color: #212121;
+}
+.header > ul > li > a:hover {
+    color: red;
+}
