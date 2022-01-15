@@ -43,6 +43,7 @@ const contactPage = (doc) => {
     
     container.appendChild(phone);
     container.appendChild(address);
+    container.appendChild(doc.createElement('hr'));
     container.appendChild(chef);
     container.appendChild(manager);
 

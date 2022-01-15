@@ -5,14 +5,19 @@
 
 .contact-card {
     align-items: center;
-    background-color: #eee;
-    border-radius: 8px;
+    background-color: #fefefe;
+    border-radius: 8px;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     gap: 16px;
     justify-content: space-evenly;
     margin: 16px auto;
     padding: 16px;
     text-align: start;
+}
+
+.contact-card:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact-card > .profile-img {

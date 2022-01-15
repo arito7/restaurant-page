@@ -16,6 +16,10 @@
     object-fit: cover;
 }
 
+.img-container > img:hover {
+    scale: 1.1;
+}
+
 .title {
     text-align: center;
 }
