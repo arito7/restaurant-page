@@ -6,8 +6,9 @@ import { menupage } from './js/menu';
 import './css/styles.css';
 
 (()=>{
-    const wrapper = document.querySelector('.container');
-    
+    const wrapper = document.createElement('div');
+    wrapper.classList.add('container');
+    document.querySelector('body').appendChild(wrapper);
     const contentWrapper = document.createElement('div');
     contentWrapper.classList.add('content-wrapper');
 
