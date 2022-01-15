@@ -6,7 +6,13 @@ import './css/styles.css';
 (()=>{
     const wrapper = document.querySelector('.container');
     wrapper.appendChild(header(document));
-    wrapper.appendChild(home(document));
+    let body = home(document);
+    wrapper.appendChild(body);
+    // const btnTest = document.createElement('button');
+    // btnTest.addEventListener('click',()=> {
+    //     wrapper.removeChild(body);
+    // })
+    // wrapper.appendChild(btnTest);
     wrapper.appendChild(footer(document));
 })()
 console.log('hello');

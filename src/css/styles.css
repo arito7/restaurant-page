@@ -1,26 +1,31 @@
 @font-face {
-    font-family: 'Lobster';
-    src: url('../fonts/lobster-regular.ttf') format('ttf');
+    font-family: Dancing;
+    src: url('../fonts/DancingScript-Regular.ttf');
     font-style: normal;
 }
 html {
     height: 100%;
 }
 body {
-    font-family: 'Lobster', 'Courier New', monospace;
+    background-image: url('../img/background.jpg');
+    font-family: Dancing, 'Courier New', monospace;
+    height: 100%;
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
 .container {
     display: flex;
-    height: 100%;
     flex-direction: column;
+    height: 100%;
 }
 
 .content {
-    flex: 1;
     align-self: stretch;
+    max-width: 940px;
+    background-color: #fdfdfd;
+    flex: 1;
+    margin: auto;
+    padding: 32px;
 }
 
