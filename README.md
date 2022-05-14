@@ -1,5 +1,5 @@
 # Restaurant Page
 
-Using: HTML, CSS, JS, Webpack
+### Webpack learning project
 
 ### [Live Demo](https://arito7.github.io/restaurant-page/)
